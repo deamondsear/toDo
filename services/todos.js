@@ -1,6 +1,6 @@
 import userEntity from '../database/userEntity.js';
 import toDoEntity from '../database/toDoEntity.js';
-import { BadRequest, NotFound } from '../utils/Errors.js';
+import { BadRequest, NotFound } from '../utils/errorsHandler.js';
 
 class ToDoService {
   static async create({ userId, fields }) {

@@ -1,7 +1,7 @@
 import UserDTO from '../DTO/userDTO.js';
 import userEntity from '../database/userEntity.js';
 import AuthService from '../services/Auth.js';
-import ErrorUtils, { Forbidden, NotFound } from '../utils/Errors.js';
+import ErrorUtils, { Forbidden, NotFound } from '../utils/errorsHandler.js';
 import bcrypt from 'bcrypt';
 
 class User {
