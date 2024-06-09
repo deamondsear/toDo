@@ -6,7 +6,7 @@ import {
   Conflict,
   Unauthorized,
   BadRequest,
-} from '../utils/Errors.js';
+} from '../utils/errorsHandler.js';
 import { ACCESS_TOKEN_EXPIRATION } from '../config.js';
 import userEntity from '../database/userEntity.js';
 import refreshTokenEntity from '../database/refreshTokenEntity.js';

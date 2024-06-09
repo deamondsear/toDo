@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { Forbidden, Unauthorized } from '../utils/Errors.js';
+import { Forbidden, Unauthorized } from '../utils/errorsHandler.js';
 import { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } from '../config.js';
 
 class TokenService {
