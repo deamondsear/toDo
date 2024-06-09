@@ -1,5 +1,5 @@
 import toDoEntity from '../database/toDoEntity.js';
-import ErrorUtils, { BadRequest } from '../utils/Errors.js';
+import ErrorUtils, { BadRequest } from '../utils/errorsHandler.js';
 import ToDoService from '../services/todos.js';
 
 class ToDo {
