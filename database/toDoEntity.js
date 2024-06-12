@@ -14,6 +14,7 @@ const toDoSchema = new mongoose.Schema(
       type: String,
       required: true,
       enum: ['active', 'completed'],
+      default: 'active',
     },
     user_id: {
       type: mongoose.Schema.Types.ObjectId,
