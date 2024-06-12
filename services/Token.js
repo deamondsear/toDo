@@ -26,9 +26,6 @@ class TokenService {
   }
 
   static async checkAccess(req, _, next) {
-    /*  В приложении примера на фронте используется interceptors.request.use (хуйня которая задает заголовки запросу до его отправки на сервер)
-    внутри колбека получает значение токена из кастомного метода, записывает его в заголовок запроса authorization в формате = `Bearer ${accessToken}`
-    */
     const authHeader = req.headers.authorization;
     const token = authHeader?.split(' ')?.[1];
     if (!token) {
